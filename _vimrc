@@ -18,10 +18,13 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/NERDTree'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'gregsexton/MatchTag'
+Plugin 'mattn/emmet-vim'
+Plugin 'matchit' "vimscripts for HTML tag jumping?
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'kien/ctrlp.vim'
 Plugin 'msanders/snipmate.vim'
+Plugin 'captbaritone-better-indent-support-for-php-with-html'
 " Plugin 'Vim-R-plugin'
 " Git plugin not hosted on GitHub:
 " Plugin 'git://git.wincent.com/command-t.git'
