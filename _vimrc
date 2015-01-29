@@ -20,6 +20,7 @@ Plugin 'Valloric/MatchTagAlways'
 Plugin 'gregsexton/MatchTag'
 Plugin 'mattn/emmet-vim'
 Plugin 'matchit' "vimscripts for HTML tag jumping?
+Plugin 'tomtom/tcomment_vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'kien/ctrlp.vim'
