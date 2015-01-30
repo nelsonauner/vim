@@ -117,3 +117,5 @@ if has("autocmd")
 
     "---- from http://vim.sourceforge.net/scripts/script.php?script_id=13
     :au Filetype html,xml,xsl,php source ~/vimfiles/scripts/closetag.vim 
+    "set t_Co=256  " make use of 256 terminal colors
+    "color summerfruit256
