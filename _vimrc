@@ -12,6 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+Plugin 'vim-scripts/L9'
+Plugin 'vim-scripts/CycleColor'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
@@ -106,3 +108,8 @@ if has("autocmd")
 	let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
 	let g:ycm_complete_in_comments = 1 " Completion in comments
 	let g:ycm_complete_in_strings = 1 " Completion in string
+    "----- from http://stackoverflow.com/questions/14315519/conemu-vim-syntax-highlight/14434531#14434531
+    set term=xterm
+    set t_Co=256
+    let &t_AB="\e[48;5;%dm"
+    let &t_AF="\e[38;5;%dm"
