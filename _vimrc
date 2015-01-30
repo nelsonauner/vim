@@ -23,6 +23,7 @@ Plugin 'gregsexton/MatchTag'
 Plugin 'mattn/emmet-vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'captbaritone/better-indent-support-for-php-with-html'
+Plugin 'othree/xml.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'kien/ctrlp.vim'
 Plugin 'msanders/snipmate.vim'
@@ -113,3 +114,6 @@ if has("autocmd")
     set t_Co=256
     let &t_AB="\e[48;5;%dm"
     let &t_AF="\e[38;5;%dm"
+
+    "---- from http://vim.sourceforge.net/scripts/script.php?script_id=13
+    :au Filetype html,xml,xsl,php source ~/vimfiles/scripts/closetag.vim 
