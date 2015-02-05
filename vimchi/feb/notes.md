@@ -36,7 +36,7 @@ o - only (kill all windows but open one
 
 
 
-#HTML
+#Part II: HTML
 ##How can we try to efficiently write HTML? 
 - Don't. Use HAML or markup
 >  "HTML lets you write what you mean, and then give you the opportunity to screw up on every closing tag"
