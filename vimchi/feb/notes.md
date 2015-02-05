@@ -1,22 +1,23 @@
-One Window Vim
-==============
+#Part I: One Window Vim
 
 How do we go to the right file, in the right window, in the right tab? 
-Your Code Is Art
-- Colour, Silhouet<F12>te, Negative Space
-- Recognize Patters
-- Be fair to your pair
+Your Code Is Art, so take it all in
+- Colour, Silhouette, Negative Space
+- Recognize Patterns
+
+
 
 Find a function call in a different file
 ctrl-6 or crtl-^ - switch actively between open buffers
 :e - most native way to navigate
 
-##Jump List
-ctrl-o move forward
-crtl-i move backword
+##Jump List 
+Shows most recent movements
+- ctrl-o move forward
+- crtl-i move backword
 
 ##split
-ctrl-w
+ctrl-w to "zoom out" 
 s - split
 o - only (kill all windows but open one
 :vsp
@@ -33,38 +34,35 @@ o - only (kill all windows but open one
 
 :b FILENAME + tab completion
 
-##ctags
-
-HTML
-========
 
 
-1- don't use it. Use HAML, or markup. 
-HTML lets you write what you mean, and then give you the opportunity to screw up on every closing tag
-
+#HTML
+##How can we try to efficiently write HTML? 
+- Don't. Use HAML or markup
+>  "HTML lets you write what you mean, and then give you the opportunity to screw up on every closing tag"
+- but if we have to write html, must learn:
+- 
 ##Surround.vim
 
 visually select code
 S + type <body> surrounds code with <body> </body> tags
-y + s + s + type out something 
-
+y + s + s + type out something -> surround with that tag
 
 italicize the following word COOL
-d a t - delete ALL the tag
 
+d a t | delete ALL the tag
+cst | change surrounding tag
+cs <C-T> | wrap the new tags on their own lines
 
-cst -- change surrounding tag
-cs <C-T> to wrap the new tags on their own lines==
+#Part III: Misc helpful commands
 
-to close: 
-
-<strong> <div> I made a mistake </
-
-#Super helpful: 
-vat <ESC> find closing tag (moving down) 
-+ and -
-skip from white space to the next character
+command | action
+---|----
+`vat` <ESC> | find closing tag (moving down) 
+`+` | skip from white space to the next character
+`-` | skip from white space to last character? 
 
 Ex: 
 put your cursor here: X
+
                 now press + and you will be on the "n"
