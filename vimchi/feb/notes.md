@@ -8,31 +8,42 @@ Your Code Is Art, so take it all in
 
 
 Find a function call in a different file
-ctrl-6 or crtl-^ - switch actively between open buffers
-:e - most native way to navigate
+
+command | action
+---|---
+ctrl-6 or crtl-^ | switch actively between open buffers
+:e | most native way to navigate
 
 ##Jump List 
 Shows most recent movements
-- ctrl-o move forward
-- crtl-i move backword
+
+command | action
+-----|----
+ctrl-o | move forward
+crtl-i | move backword
 
 ##split
-ctrl-w to "zoom out" 
-s - split
-o - only (kill all windows but open one
+command | action
+-----|-----
+ctrl-w | "zoom out" 
+s | split
+o | only (kill all windows but open one
+
+
 :vsp
 :sv
 (dont use those) 
 
 
 ##buffers:
-:ls
-:b
-:bo - kill all non-current buffers
-:bw - wipe current buffer
-:%bw - kill all non-current buffers
-
-:b FILENAME + tab completion
+command | action
+---|----
+:ls | show open buffers
+:b  | list all buffers? 
+:bo | kill all non-current buffers
+:bw | wipe current buffer
+:%bw | kill all non-current buffers
+:b FILENAME + tab completion | easily find a buffer
 
 
 
@@ -51,6 +62,8 @@ y + s + s + type out something -> surround with that tag
 
 italicize the following word COOL
 
+command | action
+---|-----
 d a t | delete ALL the tag
 cst | change surrounding tag
 cs <C-T> | wrap the new tags on their own lines
