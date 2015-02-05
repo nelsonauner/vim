@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='c:\Users\n_auner\tech\rgraphicsgallery\assets'
+let g:netrw_dirhist_2='c:\Users\n_auner\tech\GridGallery\_layouts'
+let g:netrw_dirhist_3='c:\Users'
+let g:netrw_dirhist_4='c:/Users'

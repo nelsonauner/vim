@@ -110,12 +110,12 @@ if has("autocmd")
 	let g:ycm_complete_in_comments = 1 " Completion in comments
 	let g:ycm_complete_in_strings = 1 " Completion in string
     "----- from http://stackoverflow.com/questions/14315519/conemu-vim-syntax-highlight/14434531#14434531
-    set term=xterm
-    set t_Co=256
-    let &t_AB="\e[48;5;%dm"
-    let &t_AF="\e[38;5;%dm"
-
+    " set term=xterm
+    " set t_Co=256
+    " let &t_AB="\e[48;5;%dm"
+    " let &t_AF="\e[38;5;%dm"
+    "
     "---- from http://vim.sourceforge.net/scripts/script.php?script_id=13
-    :au Filetype html,xml,xsl,php source ~/vimfiles/scripts/closetag.vim 
+    " :au Filetype html,xml,xsl,php source ~/vimfiles/scripts/closetag.vim 
     "set t_Co=256  " make use of 256 terminal colors
     "color summerfruit256
