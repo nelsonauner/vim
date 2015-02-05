@@ -66,4 +66,4 @@ command | action
 Ex: 
 put your cursor here: X
 
-                now press + and you will be on the "n"
+   now press + and you will be on the "n"
