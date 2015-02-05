@@ -73,8 +73,10 @@ cs <C-T> | wrap the new tags on their own lines
 command | action
 ---|----
 `vat` <ESC> | find closing tag (moving down) 
-`+` | skip from white space to the next character
-`-` | skip from white space to last character? 
+`^` | skip to first non-whitespace char current line |
+`+` | skip from white space to the first non-whitespace char on line below
+`-` | skip from white space to first non-whitespace char on line above
+
 
 Ex: 
 put your cursor here: X
