@@ -24,6 +24,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'captbaritone/better-indent-support-for-php-with-html'
 Plugin 'othree/xml.vim'
+
+Plugin 'jwhitley/vim-matchit'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'kien/ctrlp.vim'
 Plugin 'msanders/snipmate.vim'
