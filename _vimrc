@@ -122,7 +122,7 @@ if has("autocmd")
     "set t_Co=256  " make use of 256 terminal colors
     "color summerfruit256
     
-     R script settings
+     "R script settings
     let maplocalleader = ","
      vmap <Space> <Plug>RDSendSelection
      nmap <Space> <Plug>RDSendLine
