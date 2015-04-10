@@ -12,6 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'vim-scripts/Vim-R-plugin'
+Plugin 'jalvesaq/R-Vim-runtime'
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/CycleColor'
 Plugin 'tpope/vim-fugitive'
