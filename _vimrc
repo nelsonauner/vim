@@ -1,4 +1,3 @@
-
 "--------- from vundle for windows
 set rtp+=~/.vim/bundle/Vundle.vim/
 let path='~/vimfiles/bundle'
@@ -12,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+Plugin 'vim-scripts/Vim-R-plugin'
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/CycleColor'
 Plugin 'tpope/vim-fugitive'
@@ -121,3 +121,9 @@ if has("autocmd")
     " :au Filetype html,xml,xsl,php source ~/vimfiles/scripts/closetag.vim 
     "set t_Co=256  " make use of 256 terminal colors
     "color summerfruit256
+    
+     R script settings
+    let maplocalleader = ","
+     vmap <Space> <Plug>RDSendSelection
+     nmap <Space> <Plug>RDSendLine
+     let vimrplugin_vsplit=1
