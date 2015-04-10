@@ -1,6 +1,6 @@
 
 "--------- from vundle for windows
-set rtp+=~/vimfiles/bundle/Vundle.vim/
+set rtp+=~/.vim/bundle/Vundle.vim/
 let path='~/vimfiles/bundle'
 call vundle#begin(path)
 " alternatively, pass a path where Vundle should install plugins
