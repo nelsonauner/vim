@@ -1,0 +1,7 @@
+#ignore everything
+*
+
+#except .c source
+!_vimrc
+!vimchi/*
+!.gitignore
