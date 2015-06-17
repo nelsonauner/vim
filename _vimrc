@@ -20,6 +20,7 @@ set number
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'logstash.vim'
 Plugin 'vim-scripts/CycleColor'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
