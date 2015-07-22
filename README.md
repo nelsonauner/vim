@@ -13,10 +13,21 @@ vi ~/.vimrc
 :PluginInstall
 ```
 
-## Windows (should be seperate branch)
+## Windows 
 
 ```shell
 choco install vim
+choco install git
+```
+
+(or install them some other way)
+then, with git bash:
+```shell
+cd ~
 git clone https://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim
-git clone https://github.com/nelsonauner/vim.git ~/vim
+git clone -b windows https://github.com/nelsonauner/vim.git ~/vim
 cp ~/vim/_vimrc ~/.vimrc
+gvim .vimrc
+:so %
+:PluginInstall
+```
