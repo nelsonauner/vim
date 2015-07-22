@@ -1,6 +1,6 @@
-# vim
+# setup
 
-Set up my vim configuration with: 
+## ubuntu
 
 ```shell
 sudo apt-get install vim -y
@@ -13,4 +13,10 @@ vi ~/.vimrc
 :PluginInstall
 ```
 
-And you should be good to go
+## Windows (should be seperate branch)
+
+```shell
+choco install vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim
+git clone https://github.com/nelsonauner/vim.git ~/vim
+cp ~/vim/_vimrc ~/.vimrc
