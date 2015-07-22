@@ -31,3 +31,19 @@ gvim .vimrc
 :so %
 :PluginInstall
 ```
+
+
+# Troubleshooting
+
+Try these to understand where vim is looking for your config files
+```shell
+:e $MYVIMRC
+:help runtimepath
+```
+
+```shell
+:version
+:echo expand('~')
+:echo $HOME
+:echo $VIM
+:echo $VIMRUNTIME
