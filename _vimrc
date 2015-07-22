@@ -17,7 +17,7 @@ set number
 
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/vimfiles/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'logstash.vim'
@@ -39,6 +39,14 @@ filetype plugin indent on    " required
 
 " sudo save without vim sudo 
 cmap w!! w !sudo tee > /dev/null %
+
+" gui preferences from http://vim.wikia.com/wiki/Change_font
+if has('gui_running')
+  set guioptions-=T  " no toolbar
+  colorscheme industry
+  set lines=60 columns=108 linespace=0
+	  set guifont=Lucida_Console:h10
+endif
 
 " recommended settings for syntastic:
 
