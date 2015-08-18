@@ -1,6 +1,6 @@
 # setup
 
-## ubuntu
+## OSX / \*nix
 
 ```shell
 sudo apt-get install vim -y
