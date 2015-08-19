@@ -11,9 +11,20 @@ syntax on                       " turn syntax highlighting on by default
 set hidden                      " recommended for buffers or something
 set nocompatible              " be iMproved, required
 filetype off                  " required
+
 " hybrid line numbers!
+" don't change the order
 set relativenumber
 set number
+
+set foldmethod=syntax
+set foldlevel=10
+set foldnestmax=10
+
+set tags=./tags;/
+
+" use , instead of \ for leader 
+let maplocalleader = ","
 
 
 " set the runtime path to include Vundle and initialize
@@ -21,6 +32,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'logstash.vim'
+Plugin 'ivanov/vim-ipython'
 Plugin 'vim-scripts/CycleColor'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -44,9 +56,32 @@ cmap w!! w !sudo tee > /dev/null %
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%{fugitive#statusline()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+
+"*.md is Markdown
+au BufNewFile,BufRead *.md set filetype=markdown
+autocmd Filetype markdown setlocal textwidth=80
+
+
+" langauge-specific settings from naftali
+autocmd FileType r setlocal keywordprg=Rhelp "Changes SHIFT-K to get R man pages
+
+autocmd FileType python setlocal keywordprg=~/bin/pydoc "Changes SHIFT-K to get python man pages
+"autocmd FileType python setlocal iskeyword+=. "Make np.arange one word
+
+autocmd Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim 
+autocmd Filetype html,xml,xsl,java setlocal tabstop=2
+autocmd Filetype html,xml,xsl,java setlocal shiftwidth=2
+autocmd Filetype html,xml,xsl,java setlocal softtabstop=2
+
+autocmd Filetype text setlocal textwidth=80
+autocmd Filetype tex setlocal indentexpr=
+
+autocmd Filetype tsv setlocal noexpandtab
