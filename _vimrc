@@ -26,10 +26,14 @@ set tags=./tags;/
 " use , instead of \ for leader 
 let maplocalleader = ","
 
+" roll from j to k to exit insert mode -- no need for escape
+inoremap jk <ESC>
+
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'epeli/slimux'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'logstash.vim'
 Plugin 'ivanov/vim-ipython'
@@ -85,3 +89,9 @@ autocmd Filetype text setlocal textwidth=80
 autocmd Filetype tex setlocal indentexpr=
 
 autocmd Filetype tsv setlocal noexpandtab
+
+" commands from Chris Goldammer SLIMUX
+let g:slime_target = "tmux"
+nnoremap <C-c><C-c> :SlimuxREPLSendLine<CR>
+vnoremap <C-c><C-c> :SlimuxREPLSendSelection<CR>
+
