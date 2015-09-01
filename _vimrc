@@ -90,8 +90,6 @@ autocmd Filetype tex setlocal indentexpr=
 
 autocmd Filetype tsv setlocal noexpandtab
 
-" commands from Chris Goldammer SLIMUX
-let g:slime_target = "tmux"
-nnoremap <C-c><C-c> :SlimuxREPLSendLine<CR>
-vnoremap <C-c><C-c> :SlimuxREPLSendSelection<CR>
-
+" slimux
+map <C-c><C-c> :SlimuxREPLSendLine<CR>
+vmap <C-c><C-c> :SlimuxREPLSendSelection<CR>
